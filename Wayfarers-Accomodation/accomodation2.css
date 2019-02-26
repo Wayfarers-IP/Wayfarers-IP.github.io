@@ -1,0 +1,161 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container {
+    height: 100%;
+    background-image: url("src/backgroundRight.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.right_part{
+    width: 50%;
+    float: right;
+}
+.right_part .nav_bar{
+    background-color: rgba(0,0,0,0.5);
+    height: 9%;
+}
+.nav_bar ul{
+    list-style: none;   
+}
+.nav_bar .li{
+    color: white;
+}
+.nav_bar .normal{
+    color: white;
+    float: left;
+    padding: 10px;
+    display: inline;
+    border: none;
+    background-color: inherit;
+    min-width: 100px;
+    font-size: 18px;
+    margin-top: 16px;
+}
+.nav_bar .search_container{
+    float: right;
+    background-color:rgba(0,0,0,0);
+    height: 45px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.search_container .search_bar{
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid rgba(0,0,0,0.5);
+    width: 300px;
+    border-radius: 20px;
+    transition-delay: all 2s ease-out;
+}
+.nav_bar .material-icons{
+    background: white;
+    font-size: 18px;
+    padding: 10px;
+    color: black;
+    text-align: center;
+
+    border-radius: 20px;
+}
+.search_container button{
+    border: none;
+    background-color: inherit;
+    transform: translate(0,7.5%);
+}
+.right_part .content_container{
+    height: 91%;
+    overflow: auto;
+    position: relative;
+    background-color: rgba(0,255,255,0.3);
+}
+.active{
+    color: white;
+    background-color: rgba(0, 255, 255, 0.5);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    float: left;
+    padding: 10px;
+    display: inline;
+    border: none;
+    min-width: 100px;
+    font-size: 18px;
+    margin-top: 16px;
+}
+.site{
+    height: auto;
+    min-height: 300px;
+    width: 42.5%;
+    margin-top: 5%;
+    margin-left:5%;
+    float: left;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.image{
+    width: 80%;
+    height: 200px;
+    margin-top: 7.5%;
+    background-color: rgba(255, 255, 255 ,0.5);
+    border-radius: 15%; 
+}
+.msg{
+    font-size: 1em;
+    color: white;
+    margin-top:1%;
+}
+.msg ul{
+    list-style: none;
+}
+.msg li{
+    display: inline;
+}
+.msg .siteButton{
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 3px;
+    margin-bottom: 5%;
+    margin-top: 1%;
+}
+.content_head{
+    color: white;
+    background-color: rgba(0,0,255,0.5);
+    font-size: 2em;
+    margin-top: 1%;
+    padding: 1%;
+}
+.left_part{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.left_part .Connector{
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgba(255, 100, 100, 0.5);
+}
+.left_part .connectingText{
+    color: white;
+    font-size: 2.2em;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.left{
+    float: left;
+    margin-left: 15%;
+    margin-top: 2.5%;
+}
+.right{
+    float: right;
+    margin-right: 15%;
+    margin-top: 2.5%;
+}
