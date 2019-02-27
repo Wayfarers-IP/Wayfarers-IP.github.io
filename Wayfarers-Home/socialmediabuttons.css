@@ -1,0 +1,32 @@
+.fa {
+  padding: 5px;
+  float:right;
+  background-color:rgba(255,255,255,.12);
+  font-size: 18px;
+  width: 40px;
+  line-height: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1px 1px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  color: rgb(0,38,77);
+}
+
+.fa-twitter {
+color: rgb(0,38,77);
+}
+
+
+.fa-instagram {
+color: rgb(0,38,77);
+}
+
+.fa-pinterest {
+color: rgb(0,38,77);
+}

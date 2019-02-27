@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>Grid</title>
+        <!--todo1: make new stylesheet, and add this style there
+            todo2: add photos to all div in grid class
+            todo3: add next button
+            todo4: improve style of navigation bar according to photos
+            todo5: (optional) add turning and changing effect in photos
+            todo6: Modify or Remove border.
+            todo7: Add rounded corner if suit.
+            note1: if you don't have idea about 5th one then don't waste
+                time in it. We'll do it later.
+            note2: if required to differentiate 2 images then use border as differentiater 
+                between two images instead of margin.-->
+        <!--TakeCare: Name of photos are changed, and location of photos is src.-->
+        <style>
+            *{
+                padding: 0%;
+                margin: 0%;
+                box-sizing: border-box;
+            }
+            .grid{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+            }
+            .big{
+                width: 40%;
+                height: 40%;
+                background-color: white;
+                border: 5px solid blue;
+                position: absolute;
+            }
+            .medium{
+                width: 30%;
+                height: 30%;
+                background-color: cyan;
+                border: 3px solid green;
+                position: absolute;
+            }
+            .small{
+                width: 20%;
+                height: 20%;
+                background-color: pink;
+                border: 4px solid red;
+                position: absolute;
+            }
+            .blurish{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: rgba(0,0,0,0.5);
+            }
+            .logo{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 50%;
+                height: 20%;
+                transform: translate(-50%,-50%);
+            }
+        </style>
+        <!--Merging index and grid head-->
+        <meta charset="UTF-8" lang="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Team Wayfarers" />
+        <meta name="desciption" content="Team Wayfarers, a travel package and deal provider for kerela tourism."/>
+        <meta name="keywords"  content="OTD, Wayfarers, team, kerela, tourism, travel, package"/>
+        <meta name="Resource-type" content="Document" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+        <!-- Chrome, Firefox OS, Opera and Vivaldi --><meta name="theme-color" content="#183856">
+        <!-- Windows Phone --><meta name="msapplication-navbutton-color" content="#183856">
+        <!-- iOS Safari --><meta name="apple-mobile-web-app-status-bar-style" content="#183856">
+        <!--<link rel="stylesheet" href="./base.css"/>-->
+        <!-- <link rel="stylesheet" href="./style.css"/> -->
+        <!-- <link rel="stylesheet" href="./navbar.css"/> -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+        <link rel="stylesheet" href="socialmediabuttons.css">
+        <link rel="stylesheet" href="newbase.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="grid">
+            <div class="medium"></div>
+            <div class="big" style="left:30%"></div>
+            <div class="medium" style="right:0%;"></div>
+            <div class="medium" style="top:30%; width: 25%;"></div>
+            <div class="big" style="bottom:0%;"></div>
+            <div class="big" style="width:30%; right: 0%;
+            top: 30%;"></div>
+            <div class="medium" style="height:30%;right: 0%;
+            bottom: 0%; width: 35%;"></div>
+            <div class="medium" style="width: 25%;bottom: 0%;
+            left: 40%; "></div>
+            <div class="medium" style="bottom: 30%; right: 30%;"></div>
+            <div class="small" style="width:15%; left: 25%;
+            top: 40%;"></div>
+            <div class="small" style="width: 5%;height: 10%; left: 25%;
+            top: 30%;"></div>
+            <div class="blurish"></div>
+            <div class="logo">
+                <img style="width: 100%; height: 100%;" src="src/wayfarers_logo.png"></img>
+            </div>
+
+            <!--Merging index and image grid-->
+            <div class="header">
+                <a href="" class="active">Home</a>
+                <a href="">Blogs </a>
+                <a href="">Contact Us</a>
+                <a href="">Our Team</a>
+        
+                        <div class="header-right">
+                            <a href="#" class="fa fa-instagram"></a> 
+                            <a href="#" class="fa fa-pinterest"></a>  
+                            <a href="#" class="fa fa-twitter"></a> 
+                            <a href="#" class="fa fa-facebook"></a> 
+                        </div>
+            </div>
+        </div>
+    </body>
+</html>
+<!--70 60 70(30,40,30)-->
