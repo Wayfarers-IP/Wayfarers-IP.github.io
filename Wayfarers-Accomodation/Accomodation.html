@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accomodation</title>
+    <link rel="stylesheet" href="Accomodation.css" type="text/css">
+</head>
+<body>
+    <div class="Nav_Bar">
+        <ul class="list">
+        <center>
+            <li><Button class="active buttonStyle" id="b_hostels"
+                onclick="execute('hostels')">Hostels</Button></li>
+            <li><Button class="buttonStyle" id="b_hotels" 
+                onclick="execute('hotels')">Hotels</Button></li>
+            <li><Button class="buttonStyle" id="b_resorts" 
+                onclick="execute('resorts')">Resorts</Button></li>
+            <li><Button class="buttonStyle">Some more..</Button></li>
+        </center>
+        </ul>
+    </div>
+    <div id=heading>Accomodation</div>
+    <div class="container">
+            <img src="pic1.png" id="hostels" class="at_m"></img>
+            <div id="s_hostels" class="s_at_m">Link 1(Hostels)</div>
+            <img src="pic2.png" id="hotels" class="at_d"></img>
+            <div id="s_hotels" class="s_at_d">Link 2(Hotels)</div>
+            <img src="pic2.png" id="resorts" class="at_d"></img>
+            <div id="s_resorts" class="s_at_d">Link 3(Resort)</div> 
+    </div>
+    <script>
+        function execute(msg){
+            if(document.getElementById(msg).className!="at_m"){
+                var img = document.getElementsByClassName('at_m');
+                var text = document.getElementsByClassName('s_at_m');
+                
+                
+                var x = document.getElementsByClassName('active buttonStyle');
+                x[0].className = 'buttonStyle';
+                document.getElementById('b_'+msg).className="active buttonStyle";
+                
+                
+                img[0].className = 'at_u';
+                text[0].className = 's_at_u';
+                var pic = document.getElementById(msg);
+                var c = pic.className;
+                if(c=='at_u'){ 
+                    pic.className = 'at_d';
+                    document.getElementById('s_'+msg).className = 's_at_d';
+                }
+                setTimeout(function(){
+                    pic.className='at_m';
+                    document.getElementById('s_'+msg).className = 's_at_m';
+                    },0.0001);
+            }    
+        }
+    </script>
+</body>
+</html>
