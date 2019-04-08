@@ -26,11 +26,14 @@ h1.title{
 }
 #logo{
     display:inline-block;
-    margin-right:2em;
     color:#37474f;
     font-weight: 200;
     font-size: 1.5em;
     font-family: 'Montserrat', sans-serif;
+}
+.logoC{
+    float: left;
+    width: 4em;
 }
 section{
     background-color: #faf9f9;
