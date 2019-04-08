@@ -34,10 +34,10 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-    background-color: #000;
-    border: 0.1rem solid #fff;
+    background-color: #fff;
+    border: 0.1rem solid #102027;
     border-radius: .4rem;
-    color: #fff;
+    color: #37474f;
     cursor: pointer;
     display: inline-block;
     font-size: 1.1rem;
@@ -62,8 +62,8 @@ input[type='reset']:focus,
 input[type='reset']:hover,
 input[type='submit']:focus,
 input[type='submit']:hover {
-    background-color: #606c76;
-    border-color: #606c76;
+    background-color: #dd2c00;
+    border-color: #dd2c00;
     color: #fff;
     outline: 0
 }
@@ -97,7 +97,15 @@ input[type='button'].button-outline,
 input[type='reset'].button-outline,
 input[type='submit'].button-outline {
     background-color: transparent;
-    color: #fff;
+    color: #37474f;
+}
+
+.button.button-outline:hover,
+button.button-outline:hover,
+input[type='button'].button-outline:hover,
+input[type='reset'].button-outline:hover,
+input[type='submit'].button-outline:hover{
+    color: #dd2c00;
 }
 
 .button.button-outline:focus,
@@ -443,7 +451,7 @@ input[type='radio'] {
 }
 
 a {
-    color: #fff;
+    color: #37474f;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
