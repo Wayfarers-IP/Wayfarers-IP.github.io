@@ -11,6 +11,10 @@
 #omega-content nav ul li a{
     padding:0 0.5em;
 }
+#omega-content .active{
+    color: #bf360c;
+    text-decoration: underline;
+}
 #omega-content nav li a:hover{
     text-decoration: underline;
     color: #dd2c00;

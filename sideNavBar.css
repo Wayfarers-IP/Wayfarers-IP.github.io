@@ -1,0 +1,25 @@
+.side-nav-bar{
+    position: fixed;
+    width: 15%;
+    margin-left: 1em;
+    margin-top: 5em;
+}
+.side-nav-bar ul{
+    list-style: none;
+}
+.side-nav-bar ul li a{
+    color: #aeaeae;
+    font-size: 1em;
+    text-align: center;
+}
+
+.side-nav-bar ul li a:hover{
+    color: #a30000;
+    /* text-decoration: underline; */
+}
+
+.side-nav-bar ul li a.active{
+    color: #000000;
+    font-size: 1em;
+    text-align: center;
+}

@@ -1,0 +1,55 @@
+.Content{
+    float: right;
+    width: 82.5%;
+    margin-left: 2.5%;
+    margin-top: 1em;
+    border-left: 2px solid #90a4ae;
+
+}
+#search-button{
+    color: white;
+    background-color: #dd2c00;
+    border: none;
+}
+#search-button:hover{
+    color: white;
+    background-color: black;
+    transition-delay: 2s ease-out;
+}
+.Card{
+    width: 70%;
+    padding: 2.5%;
+    border: 1px solid #62757f;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Card .Pic{
+    width: 40%;
+    float: left;
+}
+.checked{
+    color: red;
+}
+.bookingLink{
+    font-style: italic;
+    font-weight: 900;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.red{
+    color: #b71c1c;
+}
+.green{
+    color: #1b5e20;
+}
+.skyblue{
+    color: #006064;
+}
+.blue{
+    color: #1a237e;
+}
+.bookingLink:hover{
+    color: #212121;
+    text-decoration: underline;
+}
