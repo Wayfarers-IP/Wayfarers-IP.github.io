@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Team Wayfarers" />
+    <meta name="desciption" content="Team Wayfarers, a travel package and deal provider for kerela tourism."/>
+	<meta name="keywords"  content="OTD, Wayfarers, team, kerela, tourism, travel, package"/>
+    <meta name="Resource-type" content="Document" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+<!-- Chrome, Firefox OS, Opera and Vivaldi --><meta name="theme-color" content="#183856">
+<!-- Windows Phone --><meta name="msapplication-navbutton-color" content="#183856">
+<!-- iOS Safari --><meta name="apple-mobile-web-app-status-bar-style" content="#183856">
+    <title>Wayfarers | Register</title>
+    <link rel="stylesheet" href="base.css"/>
+    <link rel="stylesheet" href="navbar.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+     integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+</head>
+<body>
+    <nav>
+      <aside id="nav-container">
+        <div id="nav-overlay"></div>
+        <nav id="nav-fullscreen" role="navigation">
+            <ul>
+                <li><a class="nav-link" href="https://dora.iitk.ac.in/funds/robowars-iitk.php">- Contribute</a></li>
+                <li><a class="nav-link" href="./target">- Our Target</a></li>
+                <li><a class="nav-link" href="./note">- Personal Note for Alumni</a></li>
+                <li><a class="nav-link" href="">- Gallery</a></li>
+                <li><a class="nav-link" href="">- Our Team</a></li>
+            </ul>
+        </nav>
+        <nav class="container">
+          <ul class=main_container>
+            <li><a href="index.html"><img src="./src/images/navlogo.png" class="photo" /><style>.photo{cursor:pointer;}"</style></a></li>
+            <li><a class="name" href="index.html">ZURA</a></li>
+            <li><a href="https://dora.iitk.ac.in/funds/robowars-iitk.php">Contribute</a></li>
+            <li><a href="./target.html">Target</a></li>
+            <li><a href="./sponsors.html">Sponsors</a></li>
+            <li class="push_right">
+            <a href="./contacts.html">Contacts</a>
+            </li>
+          </ul>
+          </nav>
+
+        <a id="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </aside>
+    </nav>
+
+
+
+
+
+
+    <script>
+resizeNav();
+window.addEventListener('resize', resizeNav)
+document.getElementById('nav-toggle').addEventListener('click', toggleNav)
+document.querySelectorAll(".nav-link").forEach(el => {
+    el.addEventListener('click', toggleNav)
+})
+
+function toggleNav () {
+    document.getElementById('nav-overlay').classList.toggle("open")
+    document.getElementById('nav-fullscreen').classList.toggle("open")
+    document.getElementById('nav-toggle').classList.toggle("open")
+}
+
+function resizeNav () {
+    let fscreen = document.getElementById('nav-fullscreen')
+    let overlay = document.getElementById('nav-overlay')
+    fscreen.style.height = "" + window.innerHeight + "px"
+    const radius = Math.sqrt(Math.pow(window.innerHeight, 2) + Math.pow(window.innerWidth, 2));
+    const diameter = radius * 2;
+    overlay.style.width = "" + diameter + "px"
+    overlay.style.height = "" + diameter + "px"
+    overlay.style.marginTop = "" + -radius + "px"
+    overlay.style.marginLeft = "" + -radius + "px"
+}
+document.addEventListener('keyup', (e) => {
+    if(e.keyCode === 27) {
+        document.getElementById('nav-overlay').classList.remove("open")
+        document.getElementById('nav-fullscreen').classList.remove("open")
+        document.getElementById('nav-toggle').classList.remove("open")
+    }
+})
+</script>
+
+</body>
+</html>
