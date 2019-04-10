@@ -1,0 +1,41 @@
+.roadcontent{
+    font-family: 'montserrat', sans-serif;
+    justify-content: left;
+    font-weight: 700;
+    line-height: 2em;
+    text-align: left;
+}
+
+
+
+.Carde {
+    width: 70%;
+    padding: 2.5%;
+    border: 1px solid #62757f;
+    border-radius: 15px;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    height: 1600px;
+}
+a.button{
+    background-color: transparent;
+    color: rgb(55, 71, 79);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    height: 3.8rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: rgb(16, 32, 39);
+    border-image: initial;
+    border-radius: 0.4rem;
+    padding: 0px 3rem;
+    text-decoration: none;
+}
+}

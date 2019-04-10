@@ -1,42 +1,54 @@
-.Navbar {
-    background-color: #000;
-    display: flex;
-    padding: 16px;
-    font-family: font-family: 'Montserrat', sans-serif;
-    color: white;
-    margin: 0;
-  }
-  .Navbar__Link {
-    padding-right: 8px;
-  }
-  .Navbar__Items {
-    display: flex;
-  }
-  .Navbar__Items--right {
-    margin-left:auto;
-  }
-  .Navbar__Link-toggle {
-    display: none;
-  }
-  @media only screen and (max-width: 768px) {
-    .Navbar__Items,
-    .Navbar {
-      flex-direction: column;
-    }
-  .Navbar__Items {
-      display:none;
-    }
-  .Navbar__Items--right {
-      margin-left:0;
-    }
-  .Navbar__ToggleShow {
-      display: flex;
-    }
-  .Navbar__Link-toggle {
-      align-self: flex-end;
-      display: initial;
-      position: absolute;
-      cursor: pointer;
-     } 
-  }
-  
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #37474f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.containerreg{
+  padding: 16px;
+  background-color: #fff;
+  width:50%;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  justify-content: center;
+  align-content: center;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+@media(width: 767px){
+
+.containerreg{
+  padding: 16px;
+  background-color: #fff;
+  width:70%;
+}
+}
