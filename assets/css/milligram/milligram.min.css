@@ -15,7 +15,7 @@ body {
     font-size: 1.6em;
     font-weight: 300;
     letter-spacing: .01em;
-    line-height: 1.6
+    /* line-height: 1.6 */
 }
 
 blockquote {
@@ -34,7 +34,7 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-    background-color: #fff;
+    background-color: transparent;
     border: 0.1rem solid #102027;
     border-radius: .4rem;
     color: #37474f;

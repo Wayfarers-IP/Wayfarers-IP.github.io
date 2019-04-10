@@ -1,0 +1,136 @@
+body{
+    background: url('./src/images/kerela6.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+.intrunk{
+    /* background-color: #D3D3D3; */
+    width: 55%;
+    height: 400%;
+    opacity: 0.7;
+    border-radius: 2rem;
+    
+
+}
+.trunk{
+    /* background:linear-gradient(to right top,rgba(5,25,55,0.7),rgba(18, 174, 235, 0.7)); */
+    max-width:100%;
+}
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 90px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 2em;
+    /* color: #37474f; */
+    color: blue;
+    width: 70%;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    -webkit-transition: all 0.4s 600ms ease-in-out;
+    transition: all 0.4s 600ms ease-in-out;
+    
+
+}
+.subtitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    color: #37474f;
+}
+
+.trav{
+    margin-top: 3em;
+}
+
+.trav li{
+    background-color: transparent;
+    color: #37474f;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    height: 3.8rem;
+    letter-spacing: .1rem;
+    line-height: 3.8rem;
+    padding: 0 3.0rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+}
+
+.trav li:hover{
+    color: white;
+    background-color: #d63434;
+    border-color: #d63434;
+}
+.explore{
+    /* background-image: url('./src/images/kerela5.jpg'); */
+    background-size: 100%;
+    margin-top: 20em;
+
+}
+
+.content{
+    margin-top: 1em;
+    font-size: 1.8em;
+    font-weight: 400;
+    font-family: 'montserrat', sans-serif;
+    margin-left: 7em;
+   
+}
+
+li.trav{
+    padding: 1em;
+    /* font-size: 1.1em; */
+}
+.connect {
+    color: white;
+    font-family: 'montserrat', sans-serif;
+    font-size: 1.5em;
+    background: url('./src/images/kerela3.jpg') no-repeat;
+    background-size: 100%;
+    padding: 15px 16px 32px;
+    width: 70%;
+    /* height: 100%; */
+    
+}
+
+.connect__headline{
+    text-align: left;
+    margin-top: 4em;
+}
+
+.connect_description{
+    text-align: left;
+    margin-top: 10em;
+}
+
+.navbutton{
+    background-color: #fff;
+    border: 0.1rem solid #fff;
+    border-radius: .4rem;
+    color: #37474f;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    height: 3.8rem;
+    letter-spacing: .1rem;
+    line-height: 3.8rem;
+    padding: 0 3.0rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.navbutton:hover{
+    color: white;
+    background-color: #d63434;
+    border-color: #d63434;
+}
