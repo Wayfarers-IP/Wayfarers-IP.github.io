@@ -23,3 +23,22 @@
     font-size: 1em;
     text-align: center;
 }
+
+.bottomLinks{
+    margin-top:50px;
+    font-family: 'Montserrat',sans-serif;
+    width: 100%;
+}
+.linkButton{
+    border-radius: 15px;
+    margin-top: 10px;
+    border: none;
+    width: 100%;
+    color: white;
+}
+
+.linkButton:hover{
+    color: black;
+    background-color: inherit !important;
+    border: 1px solid black;
+}
