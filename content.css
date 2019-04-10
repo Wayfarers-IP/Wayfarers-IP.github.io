@@ -3,6 +3,7 @@
     width: 82.5%;
     margin-left: 2.5%;
     margin-top: 1em;
+    padding-left: 60px;
     border-left: 2px solid #90a4ae;
 
 }
@@ -17,17 +18,20 @@
     transition-delay: 2s ease-out;
 }
 .Card{
-    width: 70%;
+    float: left;
+    width: 30%;
     padding: 2.5%;
     border: 1px solid #62757f;
     border-radius: 15px;
     margin-top: 10px;
-    /* margin-bottom: 10px; */
-    height: 300px;
+    margin-bottom: 10px;
+    height: 500px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 .Card .Pic{
-    width: 40%;
-    float: left;
+    width: 100%;
+    /* float: left; */
 }
 .checked{
     color: red;
