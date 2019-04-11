@@ -1,5 +1,5 @@
 body{
-    background: url('./src/images/kerela6.jpg');
+    background: linear-gradient(to right top,rgba(255,235,238,0.7),rgba(227,242,253,0.7)),url('./src/images/kerela6.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
 
@@ -18,14 +18,14 @@ body{
     max-width:100%;
 }
 .title{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 90px;
-    font-weight: 900;
+    font-family: 'Pacifico', cursive;
+    font-size: 4.8em;
+    font-weight: 100;
     text-align: center;
     margin-top: 2em;
     /* color: #37474f; */
     color: blue;
-    width: 70%;
+    width: 90%;
     -webkit-transform: translateY(20px);
     transform: translateY(20px);
     -webkit-transition: all 0.4s 600ms ease-in-out;
