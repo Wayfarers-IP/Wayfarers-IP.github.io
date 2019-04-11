@@ -22,6 +22,11 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-database.js"></script>
+    <script src="fb.js"></script>
+
 </head>
 <body>
 
@@ -42,15 +47,11 @@
                             <li><a href="index.html">Home</a></li>
                             <li><a href="Accomodation.html">Accomodation</a></li>
                             <li><a href="connectivity.html">Connectivity</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contribution.html">Contributions</a></li>
+                            <li><a href="#">Deals</a></li>
+                            <li><a href="contribution.html">Contribute</a></li>
+                            <li><a href="blog.html">Blogs</a></li>
                         </ul>
                     </nav>
-                    <div class="omega-links">
-                        <a href="register.html" class="button">Sign Up</a>
-                        <a href="regin.html" class="button">Sign In</a>
-                    </div>
-                    
                 </div>
                 <button id="omega-button">&#9776;</button>
                 <div id="omega-sidebar">
@@ -80,8 +81,9 @@
           <br><br><br>
           
       
-          <button type="submit" class="button">SUBMIT</button>
+          <button type="submit" onclick="feedbacks()" class="button">SUBMIT</button>
         </div>
       </form></center>
+      <script src="feedback.js"></script>
 </body>
 </html>
