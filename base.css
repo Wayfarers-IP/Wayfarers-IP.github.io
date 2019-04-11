@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(to right top,rgba(255,235,238,0.7),rgba(227,242,253,0.7)),url('./src/images/kerela6.jpg');
+    background: linear-gradient(to right top,rgba(224,224,224,0.7),rgba(255,204,188,0.7)),url('./src/images/kerela6.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
 
@@ -39,7 +39,7 @@ body{
     text-align: center;
     margin-top: 1em;
     margin-bottom: 2em;
-    color: #37474f;
+    color: #004d40;
 }
 
 .trav{
@@ -62,7 +62,7 @@ body{
     text-transform: uppercase;
     white-space: nowrap;
 }
-}
+
 
 .trav li:hover{
     color: white;
@@ -133,4 +133,36 @@ li.trav{
     color: white;
     background-color: #d63434;
     border-color: #d63434;
+}
+
+.feedbackContainer{
+    font-family: 'montserrat', sans-serif;
+    margin-top: 15px;
+    width: 70%;
+}
+.feedbackCard{
+    width: 48%;
+    height: 275px;
+    background-color: white;
+    margin-bottom: 15px;
+    margin-left:5px;
+    margin-right: 5px;
+    float: left;
+    border-left: 2px solid #006064;
+    border-bottom: 2px solid #006064;
+    border-radius: 15px;
+    padding: 20px;
+}
+.feedback{
+    color: #01579b;
+    text-align: justify;
+}
+.author{
+    color: #00897b;
+    text-align: left;
+    margin-bottom: 15px;
+}
+.authorEmail{
+    color: #78909c;
+    text-align: left;
 }
