@@ -26,7 +26,11 @@
     <link rel="stylesheet" href="sideNavBar.css">
     <link rel="stylesheet" href="content.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">    
+      rel="stylesheet">
+      
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-database.js"></script>
+    <script src="fb.js"></script>
 </head>
 <body>
 
@@ -36,8 +40,6 @@
     <header>
         <div class="container">
                 <div id="omega"> 
-                        <!-- <img id="logo" class="logoimg" src="logo.svg" alt="triangle with equal sides" srcset="logo.svg">
-                        <a href="#" id="logo">Wayfarers</a>                         -->
                     <div class="logoC"><img src="logo.svg" alt="triangle with equal sides" srcset="logo.svg"></div>
                     <span><a href="index.html" id="logo">Wayfarers</a></span>
                     
@@ -99,15 +101,19 @@
 
         <!-----------Search Bar --------------------->
         <div>
-        <input type="text" style="width:50%;" id="search-bar" placeholder="Search Hotels/Area">
-        <input type="button" id="search-button" value="Search">
+        <input type="text" style="width:50%;" id="search-bar" placeholder="Search Cities">
+        <input type="button" onclick="foo('Guest Houses')" id="search-button" value="Search">
         </div>
+
+        <div class="searchValues" id="valuesId"></div>
+
+        <script src='search.js'></script>
 
         <!-----------------Card 1 Started--------------------------->
         <div class="Card">
+                <div style="margin-bottom: 5px; margin-top:10px;font-size: 1.3em;">Nila Residency</div>
             <img class="Pic" src="src/Images-Kerela/gh1.webp">
-            <div style="font-size: 1.3em;">Nila Residency</div>
-            <p style="margin: 0;font-size:1em; text-decoration:underline;color: rgb(188, 170, 164);"><i style="font-size: 1em;" class="material-icons">place</i>SMP Junction, Thrissur Road, Shoranur Palakkad India 679121</p>
+            <p style="margin-top:15px;font-size:1em; text-decoration:underline;color: rgb(188, 170, 164);"><i style="font-size: 1em;" class="material-icons">place</i>SMP Junction, Thrissur Road, Shoranur Palakkad India 679121</p>
             <div>
                 <span><i class="material-icons checked">star</i></span>
                 <span><i class="material-icons checked">star</i></span>

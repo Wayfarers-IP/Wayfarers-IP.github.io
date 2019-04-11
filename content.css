@@ -4,6 +4,8 @@
     margin-left: 2.5%;
     margin-top: 1em;
     padding-left: 60px;
+
+    font-family: 'Montserrat',sans-serif;
     border-left: 2px solid #90a4ae;
 
 }
@@ -57,4 +59,16 @@
 .bookingLink:hover{
     color: #212121;
     text-decoration: underline;
+}
+.searchCard{
+    margin-top:5px;margin-bottom:5px;padding-bottom:10px; border-bottom:1px solid grey;
+}
+.searchHeading{
+    font-size: 1.3em;
+}
+.searchPlace{
+    font-size:1em; text-decoration:underline;color: rgb(188, 170, 164);
+}
+.searchBookNow{
+    font-weight:800;
 }

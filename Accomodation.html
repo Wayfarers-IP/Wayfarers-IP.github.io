@@ -26,7 +26,11 @@
     <link rel="stylesheet" href="sideNavBar.css">
     <link rel="stylesheet" href="content.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">    
+      rel="stylesheet">
+    
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-database.js"></script>
+    <script src="fb.js"></script>
 </head>
 <body>
 
@@ -101,14 +105,19 @@
 
         <!-----------Search Bar --------------------->
         <div>
-        <input type="text" style="width:50%;" id="search-bar" placeholder="Search Hotels/Area">
-        <input type="button" id="search-button" value="Search">
+        <input type="text" style="width:50%;" id="search-bar" placeholder="Search Cities">
+        <input type="button" onclick="foo('Hotels')" id="search-button" value="Search">
         </div>
+
+        <div class="searchValues" id="valuesId"></div>
+
+        <script src='search.js'></script>
+
         <!-----------------Card 1 Started--Alleppey------------------------->
         <div class="Card">
-            <div style="height:auto;" ><img class="Pic" src="src/Images-Kerela/1a.jpg"></div>
-            <div style="font-size: 1.3em;">Vasundhara Sarovar Premiere</div>
-            <p style="margin: 0;font-size:1em; text-decoration:underline;color: rgb(188, 170, 164);"><i style="font-size: 1em;" class="material-icons">place</i>VP II/ 326 F, Vayalar, Cherthala. Alleppey , 688536, Kumarakom, India</p>
+                <div style="margin-bottom: 5px; margin-top:10px; font-size: 1.3em;">Vasundhara Sarovar Premiere</div>
+            <img class="Pic" src="src/Images-Kerela/1a.jpg">
+            <p style="margin-top:15px;font-size:1em; text-decoration:underline;color: rgb(188, 170, 164);"><i style="font-size: 1em;" class="material-icons">place</i>VP II/ 326 F, Vayalar, Cherthala. Alleppey , 688536, Kumarakom, India</p>
             <div>
                 <span><i class="material-icons checked">star</i></span>
                 <span><i class="material-icons checked">star</i></span>
@@ -130,9 +139,10 @@
 
         <!-----------------Card 2 Started--Palakad------------------------->
         <div class="Card">
-                <img class="Pic" src="src/Images-Kerela/hotel2.jpg">
-                <div style="font-size: 1.3em;">Maps Residency</div>
-                <p style="margin: 0;font-size:1em; text-decoration:underline;color: rgb(188, 170, 164);">
+                <div style="margin-bottom: 5px; margin-top:10px; font-size: 1.3em;">Maps Residency</div>    
+            <img class="Pic" src="src/Images-Kerela/hotel2.jpg">
+                
+                <p style="margin-top:15px;font-size:1em; text-decoration:underline;color: rgb(188, 170, 164);">
                     <i style="font-size: 1em;" class="material-icons">place</i>
                     M G Road, Opp. DYSP Office, Near Shoranur Railway Station, Shoranur, Pin - 679121</p>
                 <div>
@@ -155,9 +165,9 @@
 
             <!-----------------Card 3 Started---Palakaad------------------------>
         <div class="Card">
+                <div style="margin-bottom: 5px; margin-top:10px; font-size: 1.3em;">Chithrapuri</div>
                 <img class="Pic" src="src/Images-Kerela/hotel3.webp">
-                <div style="font-size: 1.3em;">Chithrapuri</div>
-                <p style="margin: 0;font-size:1em; text-decoration:underline;color: rgb(188, 170, 164);"><i style="font-size: 1em;" class="material-icons">place</i>Chithrapuri Hotels (I) Pvt. Ltd. Palakkad-Shoranur Highway, Edathara, Parali Palakkad</p>
+                <p style="margin-top:15px;font-size:1em; text-decoration:underline;color: rgb(188, 170, 164);"><i style="font-size: 1em;" class="material-icons">place</i>Chithrapuri Hotels (I) Pvt. Ltd. Palakkad-Shoranur Highway, Edathara, Parali Palakkad</p>
                 <div>
                     <span><i class="material-icons checked">star</i></span>
                     <span><i class="material-icons checked">star</i></span>
@@ -178,9 +188,9 @@
 
         <!-----------------Card 4 Started--Kochi------------------------->
         <div class="Card">
+                <div style="margin-bottom: 5px; margin-top:10px;font-size: 1.3em;">Hotel Trident Cochin</div>
                 <img class="Pic" src="src/Images-Kerela/hotel4.webp">
-                <div style="font-size: 1.3em;">Hotel Trident Cochin</div>
-                <p style="margin: 0;font-size:1em; text-decoration:underline;color: rgb(188, 170, 164);">
+                <p style="margin-top:15px;font-size:1em; text-decoration:underline;color: rgb(188, 170, 164);">
                     <i style="font-size: 1em;" class="material-icons">place</i>
                     Bristow Road, Willingdon Island, 682 003, Kochi, India</p>
                 <div>
@@ -204,9 +214,9 @@
 
         <!-----------------Card 5 Started--Alappuzha------------------------->
         <div class="Card">
+                <div style="margin-bottom: 5px; margin-top:10px;font-size: 1.3em;">Ramada Alleppey</div>
                 <img class="Pic" src="src/Images-Kerela/hotel5.webp">
-                <div style="font-size: 1.3em;">Ramada Alleppey</div>
-                <p style="margin: 0;font-size:1em; text-decoration:underline;color: rgb(188, 170, 164);">
+                <p style="margin-top:15px;font-size:1em; text-decoration:underline;color: rgb(188, 170, 164);">
                     <i style="font-size: 1em;" class="material-icons">place</i>
                     Nehru Trophy Finishing Point, 688013, Alappuzha, India</p>
                 <div>
