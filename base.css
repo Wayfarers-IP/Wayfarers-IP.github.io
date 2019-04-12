@@ -1,8 +1,10 @@
 
 .me{
-    background: url('./src/images/kerela6.jpg');
+    background:linear-gradient(to right top,rgba(5,25,55,0.7),rgba(18, 235, 206, 0.7)),url('./src/images/kerela3.jpg') no-repeat;
     background-size: 100%;
-    background-repeat: no-repeat;
+    /* background: url('./src/images/kerela6.jpg'); */
+    /* background-size: 100%; */
+    /* background-repeat: no-repeat; */
 }
 .intrunk{
     /* background-color: #D3D3D3; */
@@ -24,7 +26,7 @@
     text-align: center;
     margin-top: 2em;
     /* color: #37474f; */
-    color: blue;
+    color: #d63434;
     width: 90%;
     -webkit-transform: translateY(20px);
     transform: translateY(20px);
