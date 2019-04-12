@@ -26,7 +26,7 @@
     text-align: center;
     margin-top: 2em;
     /* color: #37474f; */
-    color: #d63434;
+    color: red;
     width: 90%;
     -webkit-transform: translateY(20px);
     transform: translateY(20px);
@@ -41,7 +41,7 @@
     text-align: center;
     margin-top: 1em;
     margin-bottom: 2em;
-    color: #004d40;
+    color: #000;
 }
 
 .trav{
