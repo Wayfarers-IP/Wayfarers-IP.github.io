@@ -34,7 +34,7 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-    background-color: transparent;
+    background-color: aliceblue;
     border: 0.1rem solid #102027;
     border-radius: .4rem;
     color: #37474f;
