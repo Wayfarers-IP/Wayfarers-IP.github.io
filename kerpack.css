@@ -1,0 +1,55 @@
+          *{
+                padding: 0%;
+                margin: 0%;
+                box-sizing: border-box;
+            } 
+        .grid{
+        position: absolute;
+        top:12%;
+        left:15%;
+        right:15%;
+        width: 70%;
+        height:60%;
+        border: 2px solid black;
+        }  
+        .inpagedesc{
+            width:90%;
+	    left:5%;
+	    right:5%;
+            height:50%;
+            position:absolute;
+            padding:10px;
+            border-radius:15px;
+	    border: 1px solid black;
+        }         
+	    .desc{
+		position:absolute;
+		left:1%;
+		right:1%;
+		top:75%;
+		width:98%;
+		height:5%;
+        border-radius:5px;
+        font-family: 'Noto Sans', sans-serif;
+        text-align: center;
+        }
+	    .elements{
+        position:absolute;
+        top:103%;
+		height:30%;
+		border: 2px solid black;
+		border-radius:15px;
+		}
+	    .elements a{
+		text-decoration:none;
+		color: white;
+		}
+	    .top-left {
+  		position: absolute;
+  		top: 150px;
+  		left: 8px;
+		text-decoration:none;
+        font-size:30px;
+        color:white;
+		}
+        
