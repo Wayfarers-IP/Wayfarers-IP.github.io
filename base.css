@@ -1,7 +1,11 @@
 body{
+    
+
+}
+.me{
+    background: url('./src/images/kerela6.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
-
 }
 .intrunk{
     /* background-color: #D3D3D3; */
