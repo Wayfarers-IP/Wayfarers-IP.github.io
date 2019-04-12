@@ -1,7 +1,8 @@
-body{
+
+.me{
+    background: url('./src/images/kerela6.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
-
 }
 .intrunk{
     /* background-color: #D3D3D3; */
@@ -141,7 +142,7 @@ li.trav{
 }
 .feedbackCard{
     width: 48%;
-    height: 275px;
+    height: 300px;
     background-color: white;
     margin-bottom: 15px;
     margin-left:5px;
@@ -150,7 +151,7 @@ li.trav{
     border-left: 2px solid #006064;
     border-bottom: 2px solid #006064;
     border-radius: 15px;
-    padding: 20px;
+    padding: 40px;
 }
 .feedback{
     color: #01579b;
